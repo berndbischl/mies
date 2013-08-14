@@ -1,0 +1,19 @@
+- do need aging? what did emmerich do?
+
+- wie init wir die strep-sizes?
+olaf sagt auch ca. 1/5 der breite.
+
+-  checken, wie wir repairen, wenn die constraints verletzt sind
+
+-  check den geom scheiß
+
+-  set really good defaults in control
+günter sagt: lambda ca. 5x größer als mu. lambda? beim dim < 30 immer auf 10. formel finden?
+
+-  add emmerich ref, die wichtigste mit dem algo
+
+- add example for mies
+
+- add tests for mies with different term conditions
+
+- add more tests for maximize, check all test and add where reasonable

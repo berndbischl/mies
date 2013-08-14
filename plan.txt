@@ -1,0 +1,11 @@
+
+tobias war an sowas interessiert?
+1) r paket bauen
+2) evaluiere die ES mit soobench, gegen randomSearch und CMAES
+2b) gibt es testprobleme für mixed?
+3) dann data mining 2-3 problemen, da geht nur randomSearch und MIES.
+können wir sanity checks machen? im sinne von wir wissen welches preproc sinnvoll ist?
+4) optional: SPO mit diskreten variablen. kriging und randomForest
+5) dann was schreiben
+
+

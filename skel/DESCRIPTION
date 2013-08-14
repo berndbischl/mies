@@ -1,0 +1,10 @@
+Package: mies
+Title: Mixed-Integer Evolution strategy for black-box problems.
+Description: 
+Author: Bernd Bischl <bischl@statistik.tu-dortmund.de>, 
+  Patrick Koch <patrick.koch@fh-koeln.de>
+Maintainer: Bernd Bischl <bischl@statistik.tu-dortmund.de>
+License: BSD
+Depends: ParamHelpers
+LazyData: yes
+Version: 1.0
