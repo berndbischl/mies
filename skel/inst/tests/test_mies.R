@@ -2,7 +2,7 @@ context("mies")
 
 library(cmaes)
 ps = makeParamSet(
-  makeNumericVectorParam("x", length=2, lower=-20, upper=20)
+  makeNumericVectorParam("x", len=2, lower=-20, upper=20)
 )
 f = function(x) as.numeric(f_sphere(x$x))
 
@@ -43,7 +43,7 @@ test_that("mies vectorized works", {
 
 test_that("mies with logical works", {
   ps = makeParamSet(
-    makeNumericVectorParam("x", length=2, lower=-20, upper=20),
+    makeNumericVectorParam("x", len=2, lower=-20, upper=20),
     makeLogicalParam("w")
   )
   f = function(x) if(x$w) sum(x$x^2) else sum(x$x^2)+1

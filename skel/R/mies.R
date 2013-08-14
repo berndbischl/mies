@@ -70,11 +70,11 @@ recombineParents = function(pop, control) {
 #'  n.z = n.d = n.r = 5
 #'  mu = 4 
 #'  lambda = 28  
-#'  ctrl = makeMiesControl(maxit=100, mu=mu, lambda=lambda, log.every=10L)
+#'  ctrl = makeMiesControl(maxit=10, mu=mu, lambda=lambda, log.every=10L)
 #'  ps = makeParamSet(
-#'    makeNumericVectorParam("r", length=n.r, lower=0, upper=10),
-#'    makeIntegerVectorParam("z", length=n.z, lower=0, upper=10),
-#'    makeDiscreteVectorParam("d", length=n.d, values=c(0:9))
+#'    makeNumericVectorParam("r", len=n.r, lower=0, upper=10),
+#'    makeIntegerVectorParam("z", len=n.z, lower=0, upper=10),
+#'    makeDiscreteVectorParam("d", len=n.d, values=c(0:9))
 #'  )
 #'  
 #'  y = mies(mixedIntegerSphere, ps, control=ctrl)

@@ -34,15 +34,15 @@ initPopulation = function(par.set, control, internal) {
   width.z = i$upper.z - i$lower.z
   
   if (i$n.r > 0) {
-    p.r = makeNumericVectorParam("r", length=i$n.r, lower=i$lower.r, upper=i$upper.r)
-    p.sigma = makeNumericVectorParam("sigma", length=i$n.r, lower=0, upper=width.r/5)
+    p.r = makeNumericVectorParam("r", len=i$n.r, lower=i$lower.r, upper=i$upper.r)
+    p.sigma = makeNumericVectorParam("sigma", len=i$n.r, lower=0, upper=width.r/5)
   }
   if (i$n.z > 0) {
-    p.z = makeIntegerVectorParam("z", length=i$n.z, lower=i$lower.z, upper=i$upper.z)
-    p.xi = makeNumericVectorParam("xi", length=i$n.z, lower=0, upper=width.z/5)
+    p.z = makeIntegerVectorParam("z", len=i$n.z, lower=i$lower.z, upper=i$upper.z)
+    p.xi = makeNumericVectorParam("xi", len=i$n.z, lower=0, upper=width.z/5)
   }
   if (i$n.d > 0) {
-    p.p = makeNumericVectorParam("p", length=i$n.d, lower=0, upper=0.1)
+    p.p = makeNumericVectorParam("p", len=i$n.d, lower=0, upper=0.1)
   }
   
   pop = list()
