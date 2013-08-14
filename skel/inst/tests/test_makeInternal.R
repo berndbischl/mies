@@ -5,7 +5,7 @@ if (interactive()) {
 test_that("simple num", {
   ps = makeParamSet(
     makeNumericParam("u", lower=1, upper=4),
-    makeNumericVectorParam("v", length=2, lower=1:2, upper=10:11)
+    makeNumericVectorParam("v", len=2, lower=1:2, upper=10:11)
   )
   ctrl = makeMiesControl()
   i = makeInternal(ps, ctrl)
@@ -54,7 +54,7 @@ test_that("simple num / int", {
 
 test_that("num/ int / discrete", {
   ps = makeParamSet(
-    makeIntegerVectorParam("w", length=3, lower=7:9, upper=20),
+    makeIntegerVectorParam("w", len=3, lower=7:9, upper=20),
     makeDiscreteParam("d", values=list(a=1, b=list())),
     makeIntegerParam("x", lower=0, upper=6),
     makeNumericParam("u", lower=1, upper=4),

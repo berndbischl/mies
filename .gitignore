@@ -3,3 +3,5 @@
 .RData
 mies.Rproj
 pkg
+pkg_local.Rcheck
+pkg_local

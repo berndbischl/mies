@@ -10,9 +10,9 @@ test_that("barrierFunction", {
 
   ctrl = makeMiesControl(maxit=20, mu=mu, lambda=lambda, log.every=10L)
   ps = makeParamSet(
-    makeNumericVectorParam("r", length=nr, lower=1, upper=20),
-    makeIntegerVectorParam("z", length=nz, lower=1, upper=20),
-    makeDiscreteVectorParam("d", length=nd, values=c(1:20))
+    makeNumericVectorParam("r", len=nr, lower=1, upper=20),
+    makeIntegerVectorParam("z", len=nz, lower=1, upper=20),
+    makeDiscreteVectorParam("d", len=nd, values=c(1:20))
   )
 
   res = mies(barrier, ps, control=ctrl)

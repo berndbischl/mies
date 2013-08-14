@@ -6,7 +6,7 @@ test_that("mutate", {
   ps = makeParamSet(
     makeIntegerParam("u", lower=0, upper=10),
     makeDiscreteParam("v", values=list(a=1, b=list())),
-    makeNumericVectorParam("w", length=2, lower=0, upper=10)
+    makeNumericVectorParam("w", len=2, lower=0, upper=10)
   )
   ctrl = makeMiesControl()
   i = makeInternal(ps, ctrl)
